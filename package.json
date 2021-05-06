@@ -1,0 +1,37 @@
+{
+  "name": "halo-app",
+  "version": "1.0.0",
+  "description": "Halo web page creator and publisher app",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/electron": "^1.6.10",
+    "@typescript-eslint/eslint-plugin": "^4.22.1",
+    "@typescript-eslint/parser": "^4.22.1",
+    "copyfiles": "^2.4.1",
+    "electron": "^12.0.6",
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0"
+  },
+  "scripts": {
+    "build": "tsc && copyfiles -f src/index.html dist",
+    "start": "tsc && copyfiles -f src/index.html dist && electron ./dist/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geoscope/halo-app.git"
+  },
+  "author": "Geoscope Solutions Pty Ltd",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/geoscope/halo-app/issues"
+  },
+  "homepage": "https://github.com/geoscope/halo-app#readme"
+}
