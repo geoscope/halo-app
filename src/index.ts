@@ -4,9 +4,12 @@ import * as path from 'path'
 let mainWindow: BrowserWindow | null
 
 function createWindow() {
-  mainWindow = new BrowserWindow({
+    // TODO: place the window in the last position, or centered if not opened before
+    mainWindow = new BrowserWindow({
     width: 1024,
     height: 768,
+    minWidth: 800,
+    minHeight: 600,
     webPreferences: {
       nodeIntegration: true,
     },

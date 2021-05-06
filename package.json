@@ -21,8 +21,8 @@
   },
   "scripts": {
     "copy": "copyfiles -f src/css/* dist/css",
-    "build": "tsc && copyfiles -f src/index.html dist && copyfiles -f src/css/* dist/css && copyfiles -f src/js/* dist/js",
-    "start": "tsc && copyfiles -f src/index.html dist && copyfiles -f src/css/* dist/css && copyfiles -f src/js/* dist/js && electron ./dist/",
+    "build": "tsc && copyfiles -f src/index.html dist && copyfiles -f src/css/* dist/css && copyfiles -f src/js/* dist/js && copyfiles -f src/img/* dist/img",
+    "start": "tsc && copyfiles -f src/index.html dist && copyfiles -f src/css/* dist/css && copyfiles -f src/js/* dist/js && copyfiles -f src/img/* dist/img && electron ./dist/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
